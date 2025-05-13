@@ -1,0 +1,101 @@
+:root {
+       --bg-color: #0F0F0F;
+       --card-bg: #1C1C1E;
+       --primary: #1E88E5;
+       --accent: #FFD600;
+       --text-light: #F5F5F5;
+       --border-color: #2C2C2C;
+       --highlight: #00E5FF;                   
+       --Purple: #7C4DFF;        
+       --Accent: #18FFFF;         
+       --Cards:#1F1F1F;                                      
+       --Hover-Glowbox-shadow: 0 0 10px #7C4DFF ;
+     }
+
+
+*{
+       margin:0;
+       padding:0;
+       box-sizing: border-box;
+}
+
+body{
+       background-color:var(--bg-color);
+       color: white;
+       font-family:sans-serif;
+}
+#nav{
+       background-color: #ddd;
+}
+.hero{
+       height:80vh;
+       background-image: url("./images/driftingcropped.jpg");
+       background-size: cover;
+       background-position: center;
+       position: relative;
+       overflow: hidden;
+       
+}
+
+.hero .overlay{
+       position: absolute;
+       inset: 0;
+       background-color: rgba(0, 0, 0, 0.5);
+       z-index: 1;
+}
+.hero .container{
+       position: relative;
+        z-index: 2; 
+}
+/* .typesBanner{
+       font-family: 'Bebas Neue', sans-serif;
+       font-size: 3rem;
+       letter-spacing: 1px;
+       color: #ffffff;
+       text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+       "7cedde05557d4702bde4f333f992f18b";
+} */
+
+
+
+.car-type-card {
+       transition: transform 0.3s ease, box-shadow 0.3s ease;
+     }
+
+.car-type-card:hover{
+       transform: scale(1.05);
+       box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+       cursor: pointer;
+}
+
+
+.small-carousel {
+       max-width: 400px;
+       height: 250px;
+       margin: auto;
+       position: relative;
+     }
+   
+     .small-carousel .carousel-inner {
+       height: 100%;
+     }
+   
+     .small-carousel .carousel-item img {
+       width: 100%;
+       height: 100%;
+       object-fit: cover;  
+     }
+   
+     .small-carousel .carousel-control-prev,
+     .small-carousel .carousel-control-next {
+       top: 50%;
+       transform: translateY(-50%);
+     }
+
+.footer{
+       background-color: #0F0F0F;
+}
+
+     
+
+     

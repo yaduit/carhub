@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+       <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <title>Car news and reviews hub</title>
+       <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+       <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+       <link rel="stylesheet" href="./style.css">
+       <script defer src="./script.js"></script>
+
+
+
+</head>
+<body>
+      <!--navbar-->
+       <nav  id= "nav"class="navbar navbar-expand-lg fixed-top text-white">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">Car News Hub</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                  <ul class="navbar-nav nav-underline">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                      <a class="nav-link " href="/compare.html">Compare</a>
+                    </li> -->
+                    <li class="nav-item">
+                      <a class="nav-link" href="/upcoming.html">Upcoming</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./about">About us</a>
+                    </li>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2 " type="search" placeholder="search" aria-label="search">
+                      <button class="btn btn-secondary" type="submit">search</button>
+                    </form>
+                    
+                  </ul>
+                </div>
+              </div>
+            </nav>
+            <!--hero section-->
+            <section class="hero  d-flex align-items-center justfy-content-center gap-3 text-white ">
+              <div class="overlay"></div>
+              <div class="container ">
+                <h1 style= "font-family: 'Bebas Neue', sans-serif;" class=" fw-bold display-2  text-capitalize gap-3">the garage for car nerds
+                </h1>
+                <P class="lead text-white">Welcome to the ultimate pit stop for car lovers — where speed meets style, and obsession meets information. Whether you're chasing the latest industry buzz, craving deep-dive reviews, or drooling over dream machines, you're in the right place. From classic muscle to cutting-edge EVs, we bring you the stories, specs, and soul behind every ride. This isn't just car news — it's a full-throttle experience for the driven.</P>
+              </div>
+            </section>
+
+            <!-- Types of cars section-->
+            <div class="container-sm my-5" id="car-types">
+              <!-- Main Section Title -->
+              <!-- <div class="border border-sucess p-3 mb-5"><h1 class=" typesBanner text-center mb-4">Types of Cars</h1></div>
+           -->
+              <h5 style="text-shadow: 1px 1px 2px rgb(200, 72, 29);font-family: 'Bebas Neue', sans-serif;" class="fw-bold mb-3 display-6 text-decoration-underline"> Basic Types Of Cars</h5>
+              <!-- Card Grid -->
+              <div class="row row-cols-1 row-cols-md-3 g-4" >
+                <!-- sedan Card -->
+                <div class="col">
+                  <div class="card h-100 shadow bg-dark text-white car-type-card">
+                    <img src="./images/sedantype.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                      <h5 class="card-title">sedan</h5>
+                      <p class="card-text">Spacious, powerful, great for off-road and family trips.</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- hatchback Card -->
+                <div class="col">
+                  <div class="card h-100 shadow bg-dark text-white car-type-card">
+                    <img src="./images/hatchbacktype.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                      <h5 class="card-title">Hatchback</h5>
+                      <p class="card-text">Compact and efficient with a rear hatch for flexible cargo space</p>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- suv Card -->
+                <div class="col">
+                  <div class="card h-100 shadow bg-dark text-white car-type-card">
+                    <img src="./images/suvtype.jpg" class="card-img-top" alt="image">
+                    <div class="card-body">
+                      <h5 class="card-title">SUV</h5>
+                      <p class="card-text">Spacious and powerful, great for families, travel, and tough terrain
+                      </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!--crossover-->
+                  <div class="col">
+                    <div class="card h-100 shadow bg-dark text-white car-type-card">
+                      <img src="./images/crossovertype.jpg" class="card-img-top" alt="image">
+                      <div class="card-body">
+                        <h5 class="card-title">Crossover</h5>
+                        <p class="card-text">Stylish car-SUV mix with city comfort and higher ground clearance.
+                        </p>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+                    <!--coupe-->
+                    <div class="col">
+                      <div class="card h-100 shadow bg-dark text-white car-type-card">
+                        <img src="./images/coupetype.jpg" class="card-img-top" alt="image">
+                        <div class="card-body">
+                          <h5 class="card-title">Coupe</h5>
+                          <p class="card-text">Sporty 2-door with sleek design and exciting road performance.
+                          </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!--convertible-->
+                      <div class="col">
+                        <div class="card h-100 shadow bg-dark text-white car-type-card">
+                          <img src="./images/convertibletype.jpg" class="card-img-top" alt="image">
+                          <div class="card-body">
+                            <h5 class="card-title">Convertible</h5>
+                            <p class="card-text">Drop the top for open-air freedom and bold, sunny-day style
+                            </p>
+                            </div>
+                          </div>
+                        </div>
+
+                        <!--pickup truck-->
+                        <div class="col">
+                          <div class="card h-100 shadow bg-dark text-white car-type-card">
+                            <img src="./images/pickuptype.jpg" class="card-img-top" alt="image">
+                            <div class="card-body">
+                              <h5 class="card-title">Pickup Truck</h5>
+                              <p class="card-text">Tough and practical with a cargo bed for hauling or work use
+                              </p>
+                              </div>
+                            </div>
+                          </div>
+                          <!--Electric vehicle-->
+                          <div class="col">
+                            <div class="card h-100 shadow bg-dark text-white car-type-card">
+                              <img src="./images/electrictype.jpg" class="card-img-top" alt="image">
+                              <div class="card-body">
+                                <h5 class="card-title">Electric(EV)</h5>
+                                <p class="card-text">Eco-friendly, battery-powered cars with instant torque and zero emissions.
+                                </p>
+                                </div>
+                              </div>
+                            </div>
+                            <!--Super car-->
+                            <div class="col">
+                              <div class="card h-100 shadow bg-dark text-white car-type-card">
+                                <img src="./images/supercars.jpg" class="card-img-top" alt="image">
+                                <div class="card-body">
+                                  <h5 class="card-title">Supercar</h5>
+                                  <p class="card-text">High-end performance, cutting-edge tech, and breathtaking design
+                                  </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+          <!--car news section-->
+          <div class="container my-5">
+            <h2 style="font-family: 'Bebas Neue', sans-serif;" class="text-center mb-5">Latest Car News</h2>
+            <div class="row" id="news-container"></div>
+          </div> 
+
+
+          <!-- car movies carousel section-->
+          <div class="container">
+           <h3 style="font-family: 'Bebas Neue', sans-serif; color: rgb(227, 32, 32); font-size: 3rem;" class="mb-4 text-center ">Best Car Movies</h3>
+          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./images/the-fast-and-the-furious-tokyo-drift.webp" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="..." class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+          <hr/>
+
+         <section class="container-fluid footer bg-transparent text-white">
+          <div class="d-flex align-items-center justify-content-center gap-5 fs-3 mt-4">
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-github"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href=""><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <p class="text-center fs-6 mt-3">&copy; 2025 carhub. All Rights Reserved</p>
+        </section>
+
+
+
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+</html>
