@@ -24,9 +24,39 @@ body{
        color: white;
        font-family:sans-serif;
 }
-#nav{
-       background-color: #ddd;
+.navbar{
+       background-color: transparent;
+       padding: 15px 30px;
+
 }
+
+.nav-logo{
+       font-size: 1.9rem;
+       font-family: 'Russo One', sans-serif;
+       letter-spacing: 1px;
+       background: linear-gradient(90deg, #ff3c00, #ff0000);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+       text-transform: uppercase;
+       padding-left: 10px;
+       padding-right: 10px;
+       border-radius: 10px 20px 10px 20px;
+       box-shadow: 0 0 20px rgba(255, 60, 0, 0.5);
+
+}
+
+.nav-link {
+  color: #fff !important; 
+  font-size: 1.1rem;
+  padding: 10px 15px; 
+  transition: all 0.3s ease; 
+}
+
+.navbar-toggler-icon {
+  background-color: #fff; 
+}
+
+
 .hero{
        height:80vh;
        background-image: url("./images/driftingcropped.jpg");
@@ -47,15 +77,6 @@ body{
        position: relative;
         z-index: 2; 
 }
-/* .typesBanner{
-       font-family: 'Bebas Neue', sans-serif;
-       font-size: 3rem;
-       letter-spacing: 1px;
-       color: #ffffff;
-       text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
-       "7cedde05557d4702bde4f333f992f18b";
-} */
-
 
 
 .car-type-card {
@@ -69,28 +90,21 @@ body{
 }
 
 
-.small-carousel {
-       max-width: 400px;
-       height: 250px;
-       margin: auto;
-       position: relative;
-     }
-   
-     .small-carousel .carousel-inner {
-       height: 100%;
-     }
-   
-     .small-carousel .carousel-item img {
-       width: 100%;
-       height: 100%;
-       object-fit: cover;  
-     }
-   
-     .small-carousel .carousel-control-prev,
-     .small-carousel .carousel-control-next {
-       top: 50%;
-       transform: translateY(-50%);
-     }
+#myCarousel img {
+  object-fit: cover;
+  height: auto;
+}
+
+.gradient-text {
+       font-family:'Bebas Neue', sans-serif;
+       font-size: 3rem; 
+       background:linear-gradient(to right, #ff6a00, #ee0979);
+       -webkit-background-clip: text;
+       -webkit-text-fill-color: transparent;
+}
+
+
+
 
 .footer{
        background-color: #0F0F0F;

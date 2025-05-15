@@ -7,17 +7,20 @@
        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+       <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
        <link rel="stylesheet" href="./style.css">
        <script defer src="./script.js"></script>
+
 
 
 
 </head>
 <body>
       <!--navbar-->
-       <nav  id= "nav"class="navbar navbar-expand-lg fixed-top text-white">
+       <nav  id= "nav"class="navbar navbar-expand-lg fixed-top ">
               <div class="container-fluid">
-                <a class="navbar-brand" href="#">Car News Hub</a>
+                <a class="navbar-brand nav-logo text-capitalize" href="#">cartrix</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
                 </button>
@@ -178,40 +181,47 @@
 
 
           <!-- car movies carousel section-->
-          <div class="container">
-           <h3 style="font-family: 'Bebas Neue', sans-serif; color: rgb(227, 32, 32); font-size: 3rem;" class="mb-4 text-center ">Best Car Movies</h3>
-          <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./images/the-fast-and-the-furious-tokyo-drift.webp" class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
-              </div>
-              <div class="carousel-item">
-                <img src="..." class="d-block w-100" alt="...">
+          <div class="container mt-4">
+            <h3 class="gradient-text text-capitalize text-center text-shadow my-4"> car movies you can watch</h3>
+            <div class="mx-auto" style="max-width: 600px;">
+              <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="./images/the-fast-and-the-furious-tokyo-drift.webp" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/cars.webp" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/Ford-Vs-Ferrari.webp" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/images/gran turismo.jpg" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="./images/madmaxffuryroad.jpg" class="d-block w-100 img-fluid" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon "></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon "></span>
+                </button>
               </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
           </div>
-          </div>
+
           <hr/>
 
-         <section class="container-fluid footer bg-transparent text-white">
+         <section class="container-fluid footer bg-transparent ">
           <div class="d-flex align-items-center justify-content-center gap-5 fs-3 mt-4">
           <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
           <a href="#"><i class="fa-brands fa-github"></i></a>
           <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
           <a href=""><i class="fa-brands fa-instagram"></i></a>
           </div>
-          <p class="text-center fs-6 mt-3">&copy; 2025 carhub. All Rights Reserved</p>
+          <p class="text-center fs-6 mt-3 text-capitalize text-white">&copy; 2025 carhub. All Rights Reserved</p>
         </section>
 
 
